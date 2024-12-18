@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Search</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>HOMESTATE</a>
+
+         <ul>
+            <li><a href="#">Advertise Properties<i class="fas fa-paper-plane"></i></a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">BUY<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">HOUSE</a></li>
+                     <li><a href="#">FLAT</a></li>
+                     <li><a href="#">SHOP</a></li>
+                    
+                  </ul>
+               </li>
+               <li><a href="#">SELL<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">ADVERTISE PROPERTIES</a></li>
+                     <li><a href="#">CONTROL PANEL</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">RENT</a>
+                  <ul>
+                     <li><a href="#">HOUSE</a></li>
+                     <li><a href="#">FLAT</a></li>
+                     <li><a href="#">SHOP</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">HELP<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="about.html">ABOUT US</a></i></li>
+                     <li><a href="contact.html">CONTACT US</a></i></li>
+                     <li><a href="contact.html#faq">FAQ</a></i></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#">LIKED <i class="far fa-heart"></i></a></li>
+            <li><a href="#">ACCOUNT <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- search filter section starts  -->
+
+<section class="filters" style="padding-bottom: 0;">
+
+   <form action="" method="post">
+      <div id="close-filter"><i class="fas fa-times"></i></div>
+      <h3>Modify your search</h3>
+         
+         <div class="flex">
+            <div class="box">
+               <p> Location</p>
+               <input type="text" name="location" required maxlength="50" placeholder="Area" class="input">
+            </div>
+            <div class="box">
+               <p>Proposal Type</p>
+               <select name="offer" class="input" required>			    
+                  <option value="sale">Sale</option>
+                  <option value="resale">Resale</option>
+                  <option value="rent">Rent</option>
+               </select>
+            </div>
+            <div class="box">
+               <div class="box">
+               <p>Property Category<span></span></p>
+               <select name="type" class="input" required>
+                  <option value="home">Home</option>
+                  <option value="flat">Flat</option>
+				  <option value="apartment">Apartment</option>
+                  <option value="shop">Shop</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Bedroom <span></span></p>
+               <select name="bhk" class="input" required>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                  <option value="5">5+</option>
+               </select>
+            </div>
+<div class="box">
+               <p>Bathroom <span></span></p>
+               <select name="maximum" class="input" required>
+                  <option value="5000000">1+</option>
+                  <option value="1000000">2+</option>
+                  <option value="2000000">3+</option>
+                  <option value="3000000">4+</option>
+                  <option value="4000000">5+</option>
+                  <option value="4000000">6+</option>
+                  <option value="5000000">7+</option>                
+               </select>
+            </div>
+            <div class="box">
+               <p>Situation</p>
+               <select name="status" class="input" required>
+                  <option value="ready to move">Ready to move</option>
+                  <option value="under construction">Under construction</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Condition</p>
+               <select name="furnished" class="input" required>
+                  <option value="unfurnished">Unfurnished</option>
+                  <option value="furnished">Furnished</option>
+                  <option value="semi-furnished">Semi-furnished</option>
+               </select>
+            </div>
+			            <div class="box">
+               <p>Prices <span></span></p>
+               <select name="minimum" class="input" required>
+                  <option value="5000000">50,000</option>
+                  <option value="1000000">100,000</option>
+                  <option value="2000000">150,000</option>
+                  <option value="3000000">200,000</option>
+                  <option value="4000000">400.000</option>                 
+                  <option value="5000000">500,000</option> 
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="search property" name="search" class="btn">
+   </form>
+
+</section>
+
+<!-- search filter section ends -->
+
+<div id="filter-btn" class="fas fa-filter"></div>
+
+
+
+<!-- listings section starts  -->
+
+<section class="listings">
+
+   <h1 class="heading">Latest Properties</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="admin">
+            <h3>M</h3>
+            <div>
+               <p>Mark Paul</p>
+               <span>10-16-2023</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>House</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="house/download1.jpg" alt="">
+         </div>
+         <h3 class="name">Modern House</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>East Legon</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1050sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">View Property</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>w</h3>
+            <div>
+               <p>William Appiah</p>
+               <span>10-21-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>Flat</span><span>Sale</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="house/flat1.jpg" alt="">
+         </div>
+         <h3 class="name">Modern Flats And Apartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Kasoa Presby</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>1910sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">View Property</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>B</h3>
+            <div>
+               <p>Beatrice Nanaba</p>
+               <span>09-24-2012</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>Apartment</span><span>Rent</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="house/house1.jpg" alt="">
+         </div>
+         <h3 class="name"> Good Condition Appartments</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Circle Caprice</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+         </div>
+         <a href="view_property.html" class="btn">view property</a>
+      </div>
+
+   </div>
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.html" class="inline-btn">view all</a>
+   </div>
+
+</section>
+
+<!-- listings section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:0241273196"><i class="fas fa-phone"></i><span>0241273196</span></a>       
+         <a href="mail:willianamoah@gmail.com"><i class="fas fa-envelope"></i><span>willianamoah@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Adenta-Frafraha,Ghana</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.html"><span>Home</span></a>
+         <a href="about.html"><span>About Us </span></a>
+         <a href="contact.html"><span>Contact</span></a>
+         <a href="listings.html"><span>All Listing</span></a>
+         <a href="#"><span>Liked Properties</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>    
+         <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2022 by <span>HOMESTATE VENTURES</span> | all rights reserved!</div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+
+document.querySelector('#filter-btn').onclick = () =>{
+   document.querySelector('.filters').classList.add('active');
+}
+
+document.querySelector('#close-filter').onclick = () =>{
+   document.querySelector('.filters').classList.remove('active');
+}
+
+</script>
+
+</body>
+</html>
